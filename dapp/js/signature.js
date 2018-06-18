@@ -24,7 +24,7 @@ $('#train').on('click', function(event) {
 
     contracts.Signature.deployed().then(function(instance) {
         signatureInstance = instance;
-
+        account = web3.eth.accounts[0];
         return signatureInstance.trainSignatureModel(padData.toString(), {from: account});
     }).then(function(result) {
         console.log(result);
