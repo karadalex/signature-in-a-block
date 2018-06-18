@@ -27,5 +27,10 @@ ipfs add -r dapp
 3. Visit localhost:8080/ipfs/<HASH> where HASH is the hash of the dapp folder
 (the last result)
 
+## Troubleshooting
+
+1. Error: the tx doesn't have the correct nonce. account has nonce of: <SOME NUMber> tx has nonce of: <SOME OTHER NUMBER>. Make sure MetaMask is synced with
+the private blockchain. If not go to Metamask > Settings > Reset Account. Do this every time you deploy contracts with a new Ganache process
+
 ## Disclaimer
 This is an experimental project for educational purposes only. It is not audited and must not be used in production, on the Ethereum main network!
