@@ -14,6 +14,6 @@ $.getJSON('Signature.json', function(data) {
     contracts.Signature = TruffleContract(SignatureArtifact);
 
     // Set the provider for our contract
-    contracts.Signature.setProvider(web3);
+    contracts.Signature.setProvider(web3.currentProvider);
 });
 
