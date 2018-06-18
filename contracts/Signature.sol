@@ -7,7 +7,7 @@ contract Signature {
         string signatureTrainedMLModel;
     }
 
-    mapping (address => mySignature) signatures;
+    mapping (address => mySignature) public signatures;
 
     function trainSignatureModel(string newTrainedModel) public {
         mySignature storage sign = signatures[msg.sender];
